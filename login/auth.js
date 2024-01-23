@@ -1,0 +1,29 @@
+// buat fungsi
+// ambil value/nilai inputan username dan password
+// kita cek kondisi nya apakah username dan password yang diinputkan sama
+// dengan nilai yang kita tentukan(kondisi pertama).
+
+// jika benar arahkan ke dashboard admin
+// jika salah berikan alert username dan password salah
+
+// jika tidak inputkan untuk username dan password (kondisi kedua)
+// tampilkan alert username dan password tidak boleh kosong.
+
+function login(){
+    // mengambil nilai inputan user berdasarkan id
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if (user == "admin" && pass == "123456"){
+        alert('selamat anda berhasil login');
+        window.location = "../backend_admin/index.html"
+        return false;
+    } else if (username  == "" || password == "") {
+        alert ('username & password tidak boleh kosong')
+        return false;
+    } else {
+        alert ('username & password salah')
+        return false;
+    }
+    
+}
